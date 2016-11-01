@@ -1,0 +1,5 @@
+<%- if current_user %>
+  <h1><%= link_to "Go to the Admin", rails_admin_path %></h1>
+<%- else %>
+  <h1><%= link_to "Sign in", sign_in_path %><h1>
+<%- end %>
